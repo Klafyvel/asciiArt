@@ -1,6 +1,6 @@
 #include "dictionnaire.h"
 
-void DICTIONNAIRE_INIT()
+void dictionnaireInit()
 {
 	DICTIONNAIRE[0].car='a';
 	strcpy(DICTIONNAIRE[0].lettre[0],"  ____  ");
@@ -99,12 +99,12 @@ void DICTIONNAIRE_INIT()
 	strcpy(DICTIONNAIRE[11].lettre[5],"|______|");
 
 	DICTIONNAIRE[12].car='m';
-	strcpy(DICTIONNAIRE[1].lettre[0]," _    _ ");
-	strcpy(DICTIONNAIRE[1].lettre[0],"| \\  / |");
-	strcpy(DICTIONNAIRE[1].lettre[0],"||\\\\//||");
-	strcpy(DICTIONNAIRE[1].lettre[0],"|| \\/ ||");
-	strcpy(DICTIONNAIRE[1].lettre[0],"||    ||");
-	strcpy(DICTIONNAIRE[1].lettre[0],"||    ||");
+	strcpy(DICTIONNAIRE[12].lettre[0]," _    _ ");
+	strcpy(DICTIONNAIRE[12].lettre[1],"| \\  / |");
+	strcpy(DICTIONNAIRE[12].lettre[2],"||\\\\//||");
+	strcpy(DICTIONNAIRE[12].lettre[3],"|| \\/ ||");
+	strcpy(DICTIONNAIRE[12].lettre[4],"||    ||");
+	strcpy(DICTIONNAIRE[12].lettre[5],"||    ||");
 
 	DICTIONNAIRE[13].car='n';
 	strcpy(DICTIONNAIRE[13].lettre[0]," __   _ ");
@@ -115,12 +115,12 @@ void DICTIONNAIRE_INIT()
 	strcpy(DICTIONNAIRE[13].lettre[5],"|_|  \\_|");
 
 	DICTIONNAIRE[14].car='o';
-	strcpy(DICTIONNAIRE[1].lettre[0],"  ____  ");
-	strcpy(DICTIONNAIRE[1].lettre[0]," / __ \\ ");
-	strcpy(DICTIONNAIRE[1].lettre[0],"| |  | |");
-	strcpy(DICTIONNAIRE[1].lettre[0],"| |  | |");
-	strcpy(DICTIONNAIRE[1].lettre[0],"| |__| |");
-	strcpy(DICTIONNAIRE[1].lettre[0]," \\____/ ");
+	strcpy(DICTIONNAIRE[14].lettre[0],"  ____  ");
+	strcpy(DICTIONNAIRE[14].lettre[1]," / __ \\ ");
+	strcpy(DICTIONNAIRE[14].lettre[2],"| |  | |");
+	strcpy(DICTIONNAIRE[14].lettre[3],"| |  | |");
+	strcpy(DICTIONNAIRE[14].lettre[4],"| |__| |");
+	strcpy(DICTIONNAIRE[14].lettre[5]," \\____/ ");
 
 	DICTIONNAIRE[15].car='p';
 	strcpy(DICTIONNAIRE[15].lettre[0]," _____  ");
@@ -194,12 +194,12 @@ void DICTIONNAIRE_INIT()
 	strcpy(DICTIONNAIRE[23].lettre[5],"|_|  |_|");
 
 	DICTIONNAIRE[24].car='y';
-	strcpy(DICTIONNAIRE[1].lettre[0],"__   __ ");
-	strcpy(DICTIONNAIRE[1].lettre[0],"\\ \\ / / ");
-	strcpy(DICTIONNAIRE[1].lettre[0]," \\ v /  ");
-	strcpy(DICTIONNAIRE[1].lettre[0],"  | |   ");
-	strcpy(DICTIONNAIRE[1].lettre[0],"  | |   ");
-	strcpy(DICTIONNAIRE[1].lettre[0],"  |_|   ");
+	strcpy(DICTIONNAIRE[24].lettre[0],"__   __ ");
+	strcpy(DICTIONNAIRE[24].lettre[1],"\\ \\ / / ");
+	strcpy(DICTIONNAIRE[24].lettre[2]," \\ v /  ");
+	strcpy(DICTIONNAIRE[24].lettre[3],"  | |   ");
+	strcpy(DICTIONNAIRE[24].lettre[4],"  | |   ");
+	strcpy(DICTIONNAIRE[24].lettre[5],"  |_|   ");
 
 	DICTIONNAIRE[25].car='z';
 	strcpy(DICTIONNAIRE[25].lettre[0]," ______ ");
@@ -208,4 +208,66 @@ void DICTIONNAIRE_INIT()
 	strcpy(DICTIONNAIRE[25].lettre[3],"   / /  ");
 	strcpy(DICTIONNAIRE[25].lettre[4]," _/ /__ ");
 	strcpy(DICTIONNAIRE[25].lettre[5],"|______|");
+}
+
+struct s_dict* foundALetter(char letter)
+{
+	if(letter<'a' || letter>'z')
+		return NULL;
+
+	int id = 0;
+	int ifin = 26; // indice de début et de fin
+
+	struct s_dict* ptr = NULL; // le pointeur de retour
+	do
+	{
+		int milieu=(id + ifin)/2;
+
+		ptr = &DICTIONNAIRE[milieu];
+
+		if((ptr->car)<letter) {
+			id = milieu;
+		}
+		else if(letter<(ptr->car)){
+			ifin = milieu;
+		}
+	}while(ptr->car != letter); // tant qu'on a pas trouvé...
+
+	return ptr;
+}
+
+/*void format(char* chaine[])
+{
+	int i;
+
+	for(i=0; i<strlen(*chaine); i++)
+	{
+		*chaine[i]=tolower(*chaine[i]);
+	}
+}*/
+int printAA(char chaine[])
+{
+	int i, j, k;
+
+//	format(&chaine);
+	int size = strlen(chaine); // on prépare la chaine d'entrée
+
+	struct s_dict* asciiArt;
+
+
+	for(j=0; j<6; j++)
+	{
+		for(i=0; i<size; i++)
+		{
+			asciiArt = foundALetter(chaine[i]);
+//			printf("%s", asciiArt->lettre[j]);
+			for(k=0; k<8; k++)
+			{
+				putchar(asciiArt->lettre[j][k]);
+			}
+		}
+		printf("\n");
+	}
+
+	return 1;
 }
