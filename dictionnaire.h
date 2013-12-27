@@ -9,7 +9,6 @@
 void dictionnaireInit(void);
 int printAA(char chaine[]);
 struct s_dict* foundALetter(char letter);
-//void format(char* chaine[]);
 
 struct s_dict {
 	char car;
