@@ -14,5 +14,5 @@ struct s_dict {
 	char car;
 	char lettre[6][8]; 
 };
-struct s_dict DICTIONNAIRE[26];
+struct s_dict DICTIONNAIRE[40];
 #endif

@@ -2,231 +2,335 @@
 
 void dictionnaireInit()
 {
-	DICTIONNAIRE[0].car='A';
-	strcpy(DICTIONNAIRE[0].lettre[0],"  ____  ");
-	strcpy(DICTIONNAIRE[0].lettre[1]," / -- \\ ");
-	strcpy(DICTIONNAIRE[0].lettre[2],"| |__| |");
-	strcpy(DICTIONNAIRE[0].lettre[3],"|  __  |");
-	strcpy(DICTIONNAIRE[0].lettre[4],"| |  | |");
-	strcpy(DICTIONNAIRE[0].lettre[5],"|_|  |_|");
+	DICTIONNAIRE[0].car=32;
+	strcpy(DICTIONNAIRE[0].lettre[0],"   ");
+	strcpy(DICTIONNAIRE[0].lettre[1],"   ");
+	strcpy(DICTIONNAIRE[0].lettre[2],"   ");
+	strcpy(DICTIONNAIRE[0].lettre[3],"   ");
+	strcpy(DICTIONNAIRE[0].lettre[4],"   ");
+	strcpy(DICTIONNAIRE[0].lettre[5],"   ");
 
-	DICTIONNAIRE[1].car='B';
-	strcpy(DICTIONNAIRE[1].lettre[0]," _____  ");
-	strcpy(DICTIONNAIRE[1].lettre[1],"|  _  \\ ");
-	strcpy(DICTIONNAIRE[1].lettre[2],"| |_| / ");
-	strcpy(DICTIONNAIRE[1].lettre[3],"|  __ \\ ");
-	strcpy(DICTIONNAIRE[1].lettre[4],"| |__| |");
-	strcpy(DICTIONNAIRE[1].lettre[5],"|_____/ ");
+	DICTIONNAIRE[1].car='!';
+	strcpy(DICTIONNAIRE[1].lettre[0]," _ ");
+	strcpy(DICTIONNAIRE[1].lettre[1],"| |");
+	strcpy(DICTIONNAIRE[1].lettre[2],"| |");
+	strcpy(DICTIONNAIRE[1].lettre[3],"|_|");
+	strcpy(DICTIONNAIRE[1].lettre[4]," _ ");
+	strcpy(DICTIONNAIRE[1].lettre[5],"|_|");
 
-	DICTIONNAIRE[2].car='C';
-	strcpy(DICTIONNAIRE[2].lettre[0],"  _____ ");
-	strcpy(DICTIONNAIRE[2].lettre[1]," /  ___|");
-	strcpy(DICTIONNAIRE[2].lettre[2],"|  /    ");
-	strcpy(DICTIONNAIRE[2].lettre[3],"| |     ");
-	strcpy(DICTIONNAIRE[2].lettre[4],"|  \\___ ");
-	strcpy(DICTIONNAIRE[2].lettre[5]," \\_____|");
+	DICTIONNAIRE[2].car='0';
+	strcpy(DICTIONNAIRE[2].lettre[0]," ______ ");
+	strcpy(DICTIONNAIRE[2].lettre[1],"|  __  |");
+	strcpy(DICTIONNAIRE[2].lettre[2],"| |  | |");
+	strcpy(DICTIONNAIRE[2].lettre[3],"| |  | |");
+	strcpy(DICTIONNAIRE[2].lettre[4],"| |__| |");
+	strcpy(DICTIONNAIRE[2].lettre[5],"|______|");
 
-	DICTIONNAIRE[3].car='D';
-	strcpy(DICTIONNAIRE[3].lettre[0]," ____   ");
-	strcpy(DICTIONNAIRE[3].lettre[1],"|  _ \\  ");
-	strcpy(DICTIONNAIRE[3].lettre[2],"| | \\ \\ ");
-	strcpy(DICTIONNAIRE[3].lettre[3],"| |  | |");
-	strcpy(DICTIONNAIRE[3].lettre[4],"| |_/ / ");
-	strcpy(DICTIONNAIRE[3].lettre[5],"|___ /  ");
+	DICTIONNAIRE[3].car='1';
+	strcpy(DICTIONNAIRE[3].lettre[0],"  ___   ");
+	strcpy(DICTIONNAIRE[3].lettre[1]," /   |  ");
+	strcpy(DICTIONNAIRE[3].lettre[2],"/_|  |  ");
+	strcpy(DICTIONNAIRE[3].lettre[3],"  |  |  ");
+	strcpy(DICTIONNAIRE[3].lettre[4]," _|  |_ ");
+	strcpy(DICTIONNAIRE[3].lettre[5],"|______|");
 
-	DICTIONNAIRE[4].car='E';
-	strcpy(DICTIONNAIRE[4].lettre[0]," ______ ");
-	strcpy(DICTIONNAIRE[4].lettre[1],"|  ____|");
-	strcpy(DICTIONNAIRE[4].lettre[2],"| |___  ");
-	strcpy(DICTIONNAIRE[4].lettre[3],"|  ___| ");
-	strcpy(DICTIONNAIRE[4].lettre[4],"| |____ ");
+	DICTIONNAIRE[4].car='2';
+	strcpy(DICTIONNAIRE[4].lettre[0],"  ____  ");
+	strcpy(DICTIONNAIRE[4].lettre[1]," /    \\ ");
+	strcpy(DICTIONNAIRE[4].lettre[2],"|_ /  / ");
+	strcpy(DICTIONNAIRE[4].lettre[3],"  /  /  ");
+	strcpy(DICTIONNAIRE[4].lettre[4]," /  /__ ");
 	strcpy(DICTIONNAIRE[4].lettre[5],"|______|");
 
-	DICTIONNAIRE[5].car='F';
-	strcpy(DICTIONNAIRE[5].lettre[0]," ______ ");
-	strcpy(DICTIONNAIRE[5].lettre[1],"|  ____|");
-	strcpy(DICTIONNAIRE[5].lettre[2],"| |___  ");
-	strcpy(DICTIONNAIRE[5].lettre[3],"|  ___| ");
-	strcpy(DICTIONNAIRE[5].lettre[4],"| |     ");
-	strcpy(DICTIONNAIRE[5].lettre[5],"|_|     ");
+	DICTIONNAIRE[5].car='3';
+	strcpy(DICTIONNAIRE[5].lettre[0],"  ____  ");
+	strcpy(DICTIONNAIRE[5].lettre[1]," /___ \\ ");
+	strcpy(DICTIONNAIRE[5].lettre[2],"   __| |");
+	strcpy(DICTIONNAIRE[5].lettre[3],"  |__  |");
+	strcpy(DICTIONNAIRE[5].lettre[4]," ____/ |");
+	strcpy(DICTIONNAIRE[5].lettre[5]," \\_____/");
 
-	DICTIONNAIRE[6].car='G';
-	strcpy(DICTIONNAIRE[6].lettre[0],"  _____ ");
-	strcpy(DICTIONNAIRE[6].lettre[1]," /  ___|");
-	strcpy(DICTIONNAIRE[6].lettre[2],"| / __  ");
-	strcpy(DICTIONNAIRE[6].lettre[3],"| ||_ \\ ");
-	strcpy(DICTIONNAIRE[6].lettre[4],"| \\__/ |");
-	strcpy(DICTIONNAIRE[6].lettre[5]," \\____/ ");
+	DICTIONNAIRE[6].car='4';
+	strcpy(DICTIONNAIRE[6].lettre[0],"    __  ");
+	strcpy(DICTIONNAIRE[6].lettre[1],"   / /  ");
+	strcpy(DICTIONNAIRE[6].lettre[2],"  / /_  ");
+	strcpy(DICTIONNAIRE[6].lettre[3]," / /| |_");
+	strcpy(DICTIONNAIRE[6].lettre[4],"|___  _|");
+	strcpy(DICTIONNAIRE[6].lettre[5],"    |_| ");
 
-	DICTIONNAIRE[7].car='H';
-	strcpy(DICTIONNAIRE[7].lettre[0]," _    _ ");
-	strcpy(DICTIONNAIRE[7].lettre[1],"| |  | |");
-	strcpy(DICTIONNAIRE[7].lettre[2],"| |__| |");
-	strcpy(DICTIONNAIRE[7].lettre[3],"|  __  |");
-	strcpy(DICTIONNAIRE[7].lettre[4],"| |  | |");
-	strcpy(DICTIONNAIRE[7].lettre[5],"|_|  |_|");
+	DICTIONNAIRE[7].car='5';
+	strcpy(DICTIONNAIRE[7].lettre[0]," ______ ");
+	strcpy(DICTIONNAIRE[7].lettre[1],"|  ____|");
+	strcpy(DICTIONNAIRE[7].lettre[2],"| |___  ");
+	strcpy(DICTIONNAIRE[7].lettre[3],"|____ \\ ");
+	strcpy(DICTIONNAIRE[7].lettre[4]," ____| |");
+	strcpy(DICTIONNAIRE[7].lettre[5],"|______/");
 
-	DICTIONNAIRE[8].car='I';
+	DICTIONNAIRE[8].car='6';
 	strcpy(DICTIONNAIRE[8].lettre[0]," ______ ");
-	strcpy(DICTIONNAIRE[8].lettre[1],"|_    _|");
-	strcpy(DICTIONNAIRE[8].lettre[2],"  |  |  ");
-	strcpy(DICTIONNAIRE[8].lettre[3],"  |  |  ");
-	strcpy(DICTIONNAIRE[8].lettre[4]," _|  |_ ");
-	strcpy(DICTIONNAIRE[8].lettre[5],"|______|");
-
-	DICTIONNAIRE[9].car='J';
+	strcpy(DICTIONNAIRE[8].lettre[1],"/  ____|");
+	strcpy(DICTIONNAIRE[8].lettre[2],"| |___  ");
+	strcpy(DICTIONNAIRE[8].lettre[3],"|  __ \\ ");
+	strcpy(DICTIONNAIRE[8].lettre[4],"| |___| |");
+	strcpy(DICTIONNAIRE[8].lettre[5],"|______/ ");
+	
+	DICTIONNAIRE[9].car='7';
 	strcpy(DICTIONNAIRE[9].lettre[0]," ______ ");
-	strcpy(DICTIONNAIRE[9].lettre[1],"|__   _|");
-	strcpy(DICTIONNAIRE[9].lettre[2],"   | |  ");
-	strcpy(DICTIONNAIRE[9].lettre[3],"   | |  ");
-	strcpy(DICTIONNAIRE[9].lettre[4]," __/ /  ");
-	strcpy(DICTIONNAIRE[9].lettre[5],"|___/   ");
+	strcpy(DICTIONNAIRE[9].lettre[1],"|_____ |");
+	strcpy(DICTIONNAIRE[9].lettre[2],"   __/ /");
+	strcpy(DICTIONNAIRE[9].lettre[3],"  |_  _|");
+	strcpy(DICTIONNAIRE[9].lettre[4],"   / /  ");
+	strcpy(DICTIONNAIRE[9].lettre[5],"  /_/   ");
 
-	DICTIONNAIRE[10].car='K';
-	strcpy(DICTIONNAIRE[10].lettre[0]," __   __");
-	strcpy(DICTIONNAIRE[10].lettre[1],"|  | / /");
-	strcpy(DICTIONNAIRE[10].lettre[2],"|  |/ / ");
-	strcpy(DICTIONNAIRE[10].lettre[3],"|    |  ");
-	strcpy(DICTIONNAIRE[10].lettre[4],"|  |\\ \\ ");
-	strcpy(DICTIONNAIRE[10].lettre[5],"|__| \\_\\");
+	DICTIONNAIRE[10].car='8';
+	strcpy(DICTIONNAIRE[10].lettre[0],"  ____  ");
+	strcpy(DICTIONNAIRE[10].lettre[1]," / -- \\ ");
+	strcpy(DICTIONNAIRE[10].lettre[2],"| |__| |");
+	strcpy(DICTIONNAIRE[10].lettre[3],"|  __  |");
+	strcpy(DICTIONNAIRE[10].lettre[4],"| |__| |");
+	strcpy(DICTIONNAIRE[10].lettre[5]," \\____/ ");
 
-	DICTIONNAIRE[11].car='L';
-	strcpy(DICTIONNAIRE[11].lettre[0]," _      ");
-	strcpy(DICTIONNAIRE[11].lettre[1],"| |     ");
-	strcpy(DICTIONNAIRE[11].lettre[2],"| |     ");
-	strcpy(DICTIONNAIRE[11].lettre[3],"| |     ");
-	strcpy(DICTIONNAIRE[11].lettre[4],"| |____ ");
-	strcpy(DICTIONNAIRE[11].lettre[5],"|______|");
+	DICTIONNAIRE[11].car='9';
+	strcpy(DICTIONNAIRE[11].lettre[0],"  ____  ");
+	strcpy(DICTIONNAIRE[11].lettre[1]," / -- \\ ");
+	strcpy(DICTIONNAIRE[11].lettre[2],"| |__| |");
+	strcpy(DICTIONNAIRE[11].lettre[3]," \\___  |");
+	strcpy(DICTIONNAIRE[11].lettre[4],"  ___| |");
+	strcpy(DICTIONNAIRE[11].lettre[5]," |_____|");
 
-	DICTIONNAIRE[12].car='M';
-	strcpy(DICTIONNAIRE[12].lettre[0]," _    _ ");
-	strcpy(DICTIONNAIRE[12].lettre[1],"| \\  / |");
-	strcpy(DICTIONNAIRE[12].lettre[2],"||\\\\//||");
-	strcpy(DICTIONNAIRE[12].lettre[3],"|| \\/ ||");
-	strcpy(DICTIONNAIRE[12].lettre[4],"||    ||");
-	strcpy(DICTIONNAIRE[12].lettre[5],"||    ||");
+	DICTIONNAIRE[12].car='?';
+	strcpy(DICTIONNAIRE[12].lettre[0],"  _____ ");
+	strcpy(DICTIONNAIRE[12].lettre[1]," /___  \\");
+	strcpy(DICTIONNAIRE[12].lettre[2],"     | |");
+	strcpy(DICTIONNAIRE[12].lettre[3],"    / / ");
+	strcpy(DICTIONNAIRE[12].lettre[4],"   |_|  ");
+	strcpy(DICTIONNAIRE[12].lettre[5],"   [ ]  ");
 
-	DICTIONNAIRE[13].car='N';
-	strcpy(DICTIONNAIRE[13].lettre[0]," __   _ ");
-	strcpy(DICTIONNAIRE[13].lettre[1],"|  \\ | |");
-	strcpy(DICTIONNAIRE[13].lettre[2],"|   \\| |");
-	strcpy(DICTIONNAIRE[13].lettre[3],"| |\\   |");
-	strcpy(DICTIONNAIRE[13].lettre[4],"| | \\  |");
-	strcpy(DICTIONNAIRE[13].lettre[5],"|_|  \\_|");
+	DICTIONNAIRE[13].car='<';
+	strcpy(DICTIONNAIRE[13].lettre[0],"  __");
+	strcpy(DICTIONNAIRE[13].lettre[1]," / /");
+	strcpy(DICTIONNAIRE[13].lettre[2],"/ / ");
+	strcpy(DICTIONNAIRE[13].lettre[3],"\\ \\ ");
+	strcpy(DICTIONNAIRE[13].lettre[4]," \\_\\");
+	strcpy(DICTIONNAIRE[13].lettre[5],"    "); 
 
-	DICTIONNAIRE[14].car='O';
+	DICTIONNAIRE[14].car='A';
 	strcpy(DICTIONNAIRE[14].lettre[0],"  ____  ");
 	strcpy(DICTIONNAIRE[14].lettre[1]," / __ \\ ");
-	strcpy(DICTIONNAIRE[14].lettre[2],"| |  | |");
-	strcpy(DICTIONNAIRE[14].lettre[3],"| |  | |");
-	strcpy(DICTIONNAIRE[14].lettre[4],"| |__| |");
-	strcpy(DICTIONNAIRE[14].lettre[5]," \\____/ ");
+	strcpy(DICTIONNAIRE[14].lettre[2],"| |__| |");
+	strcpy(DICTIONNAIRE[14].lettre[3],"|  __  |");
+	strcpy(DICTIONNAIRE[14].lettre[4],"| |  | |");
+	strcpy(DICTIONNAIRE[14].lettre[5],"|_|  |_|");
 
-	DICTIONNAIRE[15].car='P';
+	DICTIONNAIRE[15].car='B';
 	strcpy(DICTIONNAIRE[15].lettre[0]," _____  ");
-	strcpy(DICTIONNAIRE[15].lettre[1],"|  __ \\ ");
-	strcpy(DICTIONNAIRE[15].lettre[2],"| |__\\ |");
-	strcpy(DICTIONNAIRE[15].lettre[3],"|  ___/ ");
-	strcpy(DICTIONNAIRE[15].lettre[4],"| |     ");
-	strcpy(DICTIONNAIRE[15].lettre[5],"|_|     ");
+	strcpy(DICTIONNAIRE[15].lettre[1],"|  _  \\ ");
+	strcpy(DICTIONNAIRE[15].lettre[2],"| |_| / ");
+	strcpy(DICTIONNAIRE[15].lettre[3],"|  __ \\ ");
+	strcpy(DICTIONNAIRE[15].lettre[4],"| |__| |");
+	strcpy(DICTIONNAIRE[15].lettre[5],"|_____/ ");
 
-	DICTIONNAIRE[16].car='Q';
-	strcpy(DICTIONNAIRE[16].lettre[0],"  ____  ");
-	strcpy(DICTIONNAIRE[16].lettre[1]," / __ \\ ");
-	strcpy(DICTIONNAIRE[16].lettre[2],"| |  | |");
-	strcpy(DICTIONNAIRE[16].lettre[3],"| | _| |");
-	strcpy(DICTIONNAIRE[16].lettre[4],"| |_\\ \\|");
-	strcpy(DICTIONNAIRE[16].lettre[5]," \\___\\_\\");
+	DICTIONNAIRE[16].car='C';
+	strcpy(DICTIONNAIRE[16].lettre[0],"  _____ ");
+	strcpy(DICTIONNAIRE[16].lettre[1]," /  ___|");
+	strcpy(DICTIONNAIRE[16].lettre[2],"|  /    ");
+	strcpy(DICTIONNAIRE[16].lettre[3],"| |     ");
+	strcpy(DICTIONNAIRE[16].lettre[4],"|  \\___ ");
+	strcpy(DICTIONNAIRE[16].lettre[5]," \\_____|");
 
-	DICTIONNAIRE[17].car='R';
-	strcpy(DICTIONNAIRE[17].lettre[0]," _____  ");
-	strcpy(DICTIONNAIRE[17].lettre[1],"|  __ \\ ");
-	strcpy(DICTIONNAIRE[17].lettre[2],"| |__\\ |");
-	strcpy(DICTIONNAIRE[17].lettre[3],"|    _/ ");
-	strcpy(DICTIONNAIRE[17].lettre[4],"| |\\ \\  ");
-	strcpy(DICTIONNAIRE[17].lettre[5],"|_| \\_\\ ");
+	DICTIONNAIRE[17].car='D';
+	strcpy(DICTIONNAIRE[17].lettre[0]," ____   ");
+	strcpy(DICTIONNAIRE[17].lettre[1],"|  _ \\  ");
+	strcpy(DICTIONNAIRE[17].lettre[2],"| | \\ \\ ");
+	strcpy(DICTIONNAIRE[17].lettre[3],"| |  | |");
+	strcpy(DICTIONNAIRE[17].lettre[4],"| |_/ / ");
+	strcpy(DICTIONNAIRE[17].lettre[5],"|___ /  ");
 
-	DICTIONNAIRE[18].car='S';
-	strcpy(DICTIONNAIRE[18].lettre[0],"  _____ ");
-	strcpy(DICTIONNAIRE[18].lettre[1]," / ____|");
+	DICTIONNAIRE[18].car='E';
+	strcpy(DICTIONNAIRE[18].lettre[0]," ______ ");
+	strcpy(DICTIONNAIRE[18].lettre[1],"|  ____|");
 	strcpy(DICTIONNAIRE[18].lettre[2],"| |___  ");
-	strcpy(DICTIONNAIRE[18].lettre[3]," \\___ \\ ");
-	strcpy(DICTIONNAIRE[18].lettre[4]," ____| |");
-	strcpy(DICTIONNAIRE[18].lettre[5],"|_____/ ");
+	strcpy(DICTIONNAIRE[18].lettre[3],"|  ___| ");
+	strcpy(DICTIONNAIRE[18].lettre[4],"| |____ ");
+	strcpy(DICTIONNAIRE[18].lettre[5],"|______|");
 
-	DICTIONNAIRE[19].car='T';
+	DICTIONNAIRE[19].car='F';
 	strcpy(DICTIONNAIRE[19].lettre[0]," ______ ");
-	strcpy(DICTIONNAIRE[19].lettre[1],"|_    _|");
-	strcpy(DICTIONNAIRE[19].lettre[2],"  |  |  ");
-	strcpy(DICTIONNAIRE[19].lettre[3],"  |  |  ");
-	strcpy(DICTIONNAIRE[19].lettre[4],"  |  |  ");
-	strcpy(DICTIONNAIRE[19].lettre[5],"  |__|  ");
+	strcpy(DICTIONNAIRE[19].lettre[1],"|  ____|");
+	strcpy(DICTIONNAIRE[19].lettre[2],"| |___  ");
+	strcpy(DICTIONNAIRE[19].lettre[3],"|  ___| ");
+	strcpy(DICTIONNAIRE[19].lettre[4],"| |     ");
+	strcpy(DICTIONNAIRE[19].lettre[5],"|_|     ");
 
-	DICTIONNAIRE[20].car='U';
-	strcpy(DICTIONNAIRE[20].lettre[0]," _    _ ");
-	strcpy(DICTIONNAIRE[20].lettre[1],"| |  | |");
-	strcpy(DICTIONNAIRE[20].lettre[2],"| |  | |");
-	strcpy(DICTIONNAIRE[20].lettre[3],"| |  | |");
-	strcpy(DICTIONNAIRE[20].lettre[4],"| |__| |");
+	DICTIONNAIRE[20].car='G';
+	strcpy(DICTIONNAIRE[20].lettre[0],"  _____ ");
+	strcpy(DICTIONNAIRE[20].lettre[1]," /  ___|");
+	strcpy(DICTIONNAIRE[20].lettre[2],"| / __  ");
+	strcpy(DICTIONNAIRE[20].lettre[3],"| ||_ \\ ");
+	strcpy(DICTIONNAIRE[20].lettre[4],"| \\__/ |");
 	strcpy(DICTIONNAIRE[20].lettre[5]," \\____/ ");
 
-	DICTIONNAIRE[21].car='V';
+	DICTIONNAIRE[21].car='H';
 	strcpy(DICTIONNAIRE[21].lettre[0]," _    _ ");
 	strcpy(DICTIONNAIRE[21].lettre[1],"| |  | |");
-	strcpy(DICTIONNAIRE[21].lettre[2],"| |  | |");
-	strcpy(DICTIONNAIRE[21].lettre[3]," \\ \\/ / ");
-	strcpy(DICTIONNAIRE[21].lettre[4],"  \\  /  ");
-	strcpy(DICTIONNAIRE[21].lettre[5],"   \\/   ");
+	strcpy(DICTIONNAIRE[21].lettre[2],"| |__| |");
+	strcpy(DICTIONNAIRE[21].lettre[3],"|  __  |");
+	strcpy(DICTIONNAIRE[21].lettre[4],"| |  | |");
+	strcpy(DICTIONNAIRE[21].lettre[5],"|_|  |_|");
 
-	DICTIONNAIRE[22].car='W';
-	strcpy(DICTIONNAIRE[22].lettre[0],"        ");
-	strcpy(DICTIONNAIRE[22].lettre[1],"||    ||");
-	strcpy(DICTIONNAIRE[22].lettre[2],"||    ||");
-	strcpy(DICTIONNAIRE[22].lettre[3],"|| /\\ ||");
-	strcpy(DICTIONNAIRE[22].lettre[4],"||//\\\\||");
-	strcpy(DICTIONNAIRE[22].lettre[5],"|_/  \\_|");
+	DICTIONNAIRE[22].car='I';
+	strcpy(DICTIONNAIRE[22].lettre[0]," ______ ");
+	strcpy(DICTIONNAIRE[22].lettre[1],"|_    _|");
+	strcpy(DICTIONNAIRE[22].lettre[2],"  |  |  ");
+	strcpy(DICTIONNAIRE[22].lettre[3],"  |  |  ");
+	strcpy(DICTIONNAIRE[22].lettre[4]," _|  |_ ");
+	strcpy(DICTIONNAIRE[22].lettre[5],"|______|");
 
-	DICTIONNAIRE[23].car='X';
-	strcpy(DICTIONNAIRE[23].lettre[0]," _    _ ");
-	strcpy(DICTIONNAIRE[23].lettre[1],"| |  | |");
-	strcpy(DICTIONNAIRE[23].lettre[2]," \\ \\/ / ");
-	strcpy(DICTIONNAIRE[23].lettre[3],"  \\  /  ");
-	strcpy(DICTIONNAIRE[23].lettre[4]," / /\\ \\ ");
-	strcpy(DICTIONNAIRE[23].lettre[5],"|_|  |_|");
+	DICTIONNAIRE[23].car='J';
+	strcpy(DICTIONNAIRE[23].lettre[0]," ______ ");
+	strcpy(DICTIONNAIRE[23].lettre[1],"|__   _|");
+	strcpy(DICTIONNAIRE[23].lettre[2],"   | |  ");
+	strcpy(DICTIONNAIRE[23].lettre[3],"   | |  ");
+	strcpy(DICTIONNAIRE[23].lettre[4]," __/ /  ");
+	strcpy(DICTIONNAIRE[23].lettre[5],"|___/   ");
 
-	DICTIONNAIRE[24].car='Y';
-	strcpy(DICTIONNAIRE[24].lettre[0],"__   __ ");
-	strcpy(DICTIONNAIRE[24].lettre[1],"\\ \\ / / ");
-	strcpy(DICTIONNAIRE[24].lettre[2]," \\ v /  ");
-	strcpy(DICTIONNAIRE[24].lettre[3],"  | |   ");
-	strcpy(DICTIONNAIRE[24].lettre[4],"  | |   ");
-	strcpy(DICTIONNAIRE[24].lettre[5],"  |_|   ");
+	DICTIONNAIRE[24].car='K';
+	strcpy(DICTIONNAIRE[24].lettre[0]," __   __");
+	strcpy(DICTIONNAIRE[24].lettre[1],"|  | / /");
+	strcpy(DICTIONNAIRE[24].lettre[2],"|  |/ / ");
+	strcpy(DICTIONNAIRE[24].lettre[3],"|    |  ");
+	strcpy(DICTIONNAIRE[24].lettre[4],"|  |\\ \\ ");
+	strcpy(DICTIONNAIRE[24].lettre[5],"|__| \\_\\");
 
-	DICTIONNAIRE[25].car='Z';
-	strcpy(DICTIONNAIRE[25].lettre[0]," ______ ");
-	strcpy(DICTIONNAIRE[25].lettre[1],"|____  |");
-	strcpy(DICTIONNAIRE[25].lettre[2],"    / / ");
-	strcpy(DICTIONNAIRE[25].lettre[3],"   / /  ");
-	strcpy(DICTIONNAIRE[25].lettre[4]," _/ /__ ");
+	DICTIONNAIRE[25].car='L';
+	strcpy(DICTIONNAIRE[25].lettre[0]," _      ");
+	strcpy(DICTIONNAIRE[25].lettre[1],"| |     ");
+	strcpy(DICTIONNAIRE[25].lettre[2],"| |     ");
+	strcpy(DICTIONNAIRE[25].lettre[3],"| |     ");
+	strcpy(DICTIONNAIRE[25].lettre[4],"| |____ ");
 	strcpy(DICTIONNAIRE[25].lettre[5],"|______|");
 
-	DICTIONNAIRE[26].car=' ';
-	strcpy(DICTIONNAIRE[26].lettre[0],"    ");
-	strcpy(DICTIONNAIRE[26].lettre[1],"    ");
-	strcpy(DICTIONNAIRE[26].lettre[2],"    ");
-	strcpy(DICTIONNAIRE[26].lettre[3],"    ");
-	strcpy(DICTIONNAIRE[26].lettre[4],"    ");
-	strcpy(DICTIONNAIRE[26].lettre[5],"    ");
+	DICTIONNAIRE[26].car='M';
+	strcpy(DICTIONNAIRE[26].lettre[0]," _    _ ");
+	strcpy(DICTIONNAIRE[26].lettre[1],"| \\  / |");
+	strcpy(DICTIONNAIRE[26].lettre[2],"||\\\\//||");
+	strcpy(DICTIONNAIRE[26].lettre[3],"|| \\/ ||");
+	strcpy(DICTIONNAIRE[26].lettre[4],"||    ||");
+	strcpy(DICTIONNAIRE[26].lettre[5],"||    ||");
+
+	DICTIONNAIRE[27].car='N';
+	strcpy(DICTIONNAIRE[27].lettre[0]," __   _ ");
+	strcpy(DICTIONNAIRE[27].lettre[1],"|  \\ | |");
+	strcpy(DICTIONNAIRE[27].lettre[2],"|   \\| |");
+	strcpy(DICTIONNAIRE[27].lettre[3],"| |\\   |");
+	strcpy(DICTIONNAIRE[27].lettre[4],"| | \\  |");
+	strcpy(DICTIONNAIRE[27].lettre[5],"|_|  \\_|");
+
+	DICTIONNAIRE[28].car='O';
+	strcpy(DICTIONNAIRE[28].lettre[0],"  ____  ");
+	strcpy(DICTIONNAIRE[28].lettre[1]," / __ \\ ");
+	strcpy(DICTIONNAIRE[28].lettre[2],"| |  | |");
+	strcpy(DICTIONNAIRE[28].lettre[3],"| |  | |");
+	strcpy(DICTIONNAIRE[28].lettre[4],"| |__| |");
+	strcpy(DICTIONNAIRE[28].lettre[5]," \\____/ ");
+
+	DICTIONNAIRE[29].car='P';
+	strcpy(DICTIONNAIRE[29].lettre[0]," _____  ");
+	strcpy(DICTIONNAIRE[29].lettre[1],"|  __ \\ ");
+	strcpy(DICTIONNAIRE[29].lettre[2],"| |__\\ |");
+	strcpy(DICTIONNAIRE[29].lettre[3],"|  ___/ ");
+	strcpy(DICTIONNAIRE[29].lettre[4],"| |     ");
+	strcpy(DICTIONNAIRE[29].lettre[5],"|_|     ");
+
+	DICTIONNAIRE[30].car='Q';
+	strcpy(DICTIONNAIRE[30].lettre[0],"  ____  ");
+	strcpy(DICTIONNAIRE[30].lettre[1]," / __ \\ ");
+	strcpy(DICTIONNAIRE[30].lettre[2],"| |  | |");
+	strcpy(DICTIONNAIRE[30].lettre[3],"| | _| |");
+	strcpy(DICTIONNAIRE[30].lettre[4],"| |_\\ \\|");
+	strcpy(DICTIONNAIRE[30].lettre[5]," \\___\\_\\");
+
+	DICTIONNAIRE[31].car='R';
+	strcpy(DICTIONNAIRE[31].lettre[0]," _____  ");
+	strcpy(DICTIONNAIRE[31].lettre[1],"|  __ \\ ");
+	strcpy(DICTIONNAIRE[31].lettre[2],"| |__\\ |");
+	strcpy(DICTIONNAIRE[31].lettre[3],"|    _/ ");
+	strcpy(DICTIONNAIRE[31].lettre[4],"| |\\ \\  ");
+	strcpy(DICTIONNAIRE[31].lettre[5],"|_| \\_\\ ");
+
+	DICTIONNAIRE[32].car='S';
+	strcpy(DICTIONNAIRE[32].lettre[0],"  _____ ");
+	strcpy(DICTIONNAIRE[32].lettre[1]," / ____|");
+	strcpy(DICTIONNAIRE[32].lettre[2],"| |___  ");
+	strcpy(DICTIONNAIRE[32].lettre[3]," \\___ \\ ");
+	strcpy(DICTIONNAIRE[32].lettre[4]," ____| |");
+	strcpy(DICTIONNAIRE[32].lettre[5],"|_____/ ");
+
+	DICTIONNAIRE[33].car='T';
+	strcpy(DICTIONNAIRE[33].lettre[0]," ______ ");
+	strcpy(DICTIONNAIRE[33].lettre[1],"|_    _|");
+	strcpy(DICTIONNAIRE[33].lettre[2],"  |  |  ");
+	strcpy(DICTIONNAIRE[33].lettre[3],"  |  |  ");
+	strcpy(DICTIONNAIRE[33].lettre[4],"  |  |  ");
+	strcpy(DICTIONNAIRE[33].lettre[5],"  |__|  ");
+
+	DICTIONNAIRE[34].car='U';
+	strcpy(DICTIONNAIRE[34].lettre[0]," _    _ ");
+	strcpy(DICTIONNAIRE[34].lettre[1],"| |  | |");
+	strcpy(DICTIONNAIRE[34].lettre[2],"| |  | |");
+	strcpy(DICTIONNAIRE[34].lettre[3],"| |  | |");
+	strcpy(DICTIONNAIRE[34].lettre[4],"| |__| |");
+	strcpy(DICTIONNAIRE[34].lettre[5]," \\____/ ");
+
+	DICTIONNAIRE[35].car='V';
+	strcpy(DICTIONNAIRE[35].lettre[0]," _    _ ");
+	strcpy(DICTIONNAIRE[35].lettre[1],"| |  | |");
+	strcpy(DICTIONNAIRE[35].lettre[2],"| |  | |");
+	strcpy(DICTIONNAIRE[35].lettre[3]," \\ \\/ / ");
+	strcpy(DICTIONNAIRE[35].lettre[4],"  \\  /  ");
+	strcpy(DICTIONNAIRE[35].lettre[5],"   \\/   ");
+
+	DICTIONNAIRE[36].car='W';
+	strcpy(DICTIONNAIRE[36].lettre[0],"        ");
+	strcpy(DICTIONNAIRE[36].lettre[1],"||    ||");
+	strcpy(DICTIONNAIRE[36].lettre[2],"||    ||");
+	strcpy(DICTIONNAIRE[36].lettre[3],"|| /\\ ||");
+	strcpy(DICTIONNAIRE[36].lettre[4],"||//\\\\||");
+	strcpy(DICTIONNAIRE[36].lettre[5],"|_/  \\_|");
+
+	DICTIONNAIRE[37].car='X';
+	strcpy(DICTIONNAIRE[37].lettre[0]," _    _ ");
+	strcpy(DICTIONNAIRE[37].lettre[1],"| |  | |");
+	strcpy(DICTIONNAIRE[37].lettre[2]," \\ \\/ / ");
+	strcpy(DICTIONNAIRE[37].lettre[3],"  \\  /  ");
+	strcpy(DICTIONNAIRE[37].lettre[4]," / /\\ \\ ");
+	strcpy(DICTIONNAIRE[37].lettre[5],"|_|  |_|");
+
+	DICTIONNAIRE[38].car='Y';
+	strcpy(DICTIONNAIRE[38].lettre[0],"__   __ ");
+	strcpy(DICTIONNAIRE[38].lettre[1],"\\ \\ / / ");
+	strcpy(DICTIONNAIRE[38].lettre[2]," \\ v /  ");
+	strcpy(DICTIONNAIRE[38].lettre[3],"  | |   ");
+	strcpy(DICTIONNAIRE[38].lettre[4],"  | |   ");
+	strcpy(DICTIONNAIRE[38].lettre[5],"  |_|   ");
+
+	DICTIONNAIRE[39].car='Z';
+	strcpy(DICTIONNAIRE[39].lettre[0]," ______ ");
+	strcpy(DICTIONNAIRE[39].lettre[1],"|____  |");
+	strcpy(DICTIONNAIRE[39].lettre[2],"    / / ");
+	strcpy(DICTIONNAIRE[39].lettre[3],"   / /  ");
+	strcpy(DICTIONNAIRE[39].lettre[4]," _/ /__ ");
+	strcpy(DICTIONNAIRE[39].lettre[5],"|______|");
 
 }
 
 struct s_dict* foundALetter(char letter)
 {
-	if((letter<'a' || letter>'z')&&(letter<'A' || letter>'Z'))
+	if((letter<'a' || letter>'z')&&(letter<'A' || letter>'Z')&&(letter<32 || letter>33)&&(letter<'0' || letter>'9')&&(letter!='<' || letter!='?'))
 		return NULL;
 
 	int id = 0;
-	int ifin = 26; // indice de début et de fin
+	int ifin = 40; // indice de début et de fin
 
 	struct s_dict* ptr = NULL; // le pointeur de retour
 	do
@@ -265,7 +369,7 @@ int printAA(char chaine[])
 	{
 		for(i=0; i<size; i++)
 		{
-			if(chaine[i]>='A' && chaine[i]<='Z')
+			if((chaine[i]>='A' && chaine[i]<='Z')||(chaine[i]>=32 && chaine[i]<=33)||(chaine[i]>='0' && chaine[i]<='9')||(chaine[i]=='<' || chaine[i]=='?'))
 			{
 				asciiArt = foundALetter(chaine[i]);
 //			printf("%s", asciiArt->lettre[j]);
